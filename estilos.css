@@ -74,7 +74,7 @@ header button:hover{
 .hero{
     padding-top: 10rem;
     background-color: #f4fcff;
-    height: 50rem;
+    height: 54rem;
     align-items: center;
     position: relative;
 }
@@ -247,7 +247,7 @@ padding: 0.6rem 0;
 }
 .card{
     text-align: justify;
-    margin: 0 1rem;
+    margin: 1rem;
     border-radius: 10px;
     box-shadow: 3px 3px 10px 8px #ececf5c4;
     cursor: pointer;
