@@ -154,7 +154,7 @@ span{
     background-color: #f4fcff;
     border-radius: 8px;
     cursor: pointer;
-    margin: 1rem;
+    margin: 2rem;
     flex: 1 1 200px;    
 }    
 .recuadro:first-child{
@@ -404,6 +404,12 @@ hr{
   .foto{
     margin-left: 5rem;
   }
+  .cards{
+    flex-direction: column;
+  }
+  .foto-card{
+    height: 20rem;
+  }
 
 }
 @media screen and (max-width:768px)
@@ -433,20 +439,9 @@ hr{
         flex-direction: column;
         flex: 1 1 100%;
     }
-    /* form{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    } */
     input{
         width: 200%;
     }
-    /* .terminos{
-        display: flex;
-        align-content: flex-start;        
-        width: 100%;
-    } */
     .terminos p{
         width: 100%;
     }
