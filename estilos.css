@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+body{
+    font-family:'Heebo', sans-serif;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+h2{
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 1.2rem;
+    font-weight: bold;
+}
+header{
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0 10px 30px #d8daddc4;
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    padding-top: 10px;
+}
+.contenedor-header{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+.logo{
+    font-size: 2.5rem;
+    color: #e32771;
+    cursor: pointer;
+}
+.logo span{
+    display: none;
+}
+.btn{
+    margin-right: 0;
+}
+a:hover{
+    color: #e32771;
+}
+.inicio{
+    color: #e32771;
+}
+
+header button{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px 20px;
+   
+    border: 2px solid #e32771;
+    border-radius: 5px;
+    background: none;
+    color: #e32771;
+}
+header button:hover{
+    color: white;
+    background-color: #e32771;
+}
+.hero{
+    padding-top: 10rem;
+    background-color: #f4fcff;
+    height: 50rem;
+    align-items: center;
+    position: relative;
+}
+.contenedor-hero{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+}
+.foto{
+    width: 40%;
+    max-width: 1290px;
+    margin-left: 2rem;
+}
+.hero img{
+    width: 100%;
+}
+.tx-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    animation-name: aminacion-tx;
+    animation-duration: 4s;
+    flex: 1 1 auto;
+}
+@keyframes aminacion-tx{
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+.tx-hero p{
+    padding: 10px 0;
+}
+span{
+    color: #e32771;
+}
+.tx-hero button{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #e32771;
+    color: white;
+    width: 20%;
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+.tx-hero button:hover{
+    border: 1px solid #e32771;
+    background: none;
+    color: #e32771;
+}
+.experiencias{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.experiencias h1{
+    margin-top: 1.5rem;
+    margin-bottom: 4.5rem;
+}
+.exp-titulo{
+    width: 50%;
+}
+.recuadros{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10rem;   
+    flex-wrap: wrap;
+}
+.recuadro{
+    padding: 0.4rem;
+    background-color: #f4fcff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1rem;
+    flex: 1 1 200px;    
+}    
+.recuadro:first-child{
+    box-shadow: 0 3px #e32771;
+}
+.recuadro:hover{
+    box-shadow: 0 3px #e32771;
+    transition: 0.2s;
+}
+.recuadro h2{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.recuadro p{
+    margin-left: 1.5rem;
+}
+.icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 20%;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    box-shadow: 1px 1px 3px 2px #f2f2f3c4;
+}
+.icono i{
+    font-size: 2rem;
+    padding: 10px;
+}
+.sobre-mi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+}
+.sobre-mi img{
+    width: 40%;
+    margin-right: 2rem;
+}
+
+.negrita{
+    font-weight: bold;
+}
+.tx-sobre-mi{
+    width: 45%;
+    margin-right: 3rem;
+    flex: 1 1 auto;
+}
+.tx-sobre-mi p,h2{
+padding: 0.6rem 0;
+}
+.mis-trabajos{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+.tx-encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.3rem;
+    padding-bottom: 3rem;
+}
+.tx-encabezado button{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding-right: 5px;
+    border: 2px solid #e32771;
+    border-radius: 5px;
+    background: #e32771;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.tx-encabezado button:hover{
+    border: 2px solid #e32771;
+    background: none;
+    color: #e32771;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;  
+    flex-wrap: wrap;     
+}
+.card{
+    text-align: justify;
+    margin: 0 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 8px #ececf5c4;
+    cursor: pointer;
+    flex: 1 1 100px;    
+    
+}
+.card:hover{
+    transform: scale(1.03);
+}
+.foto-card{
+    width: 100%;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    
+}
+.foto-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.tx-card{
+    padding: 1.3rem;
+}
+.tx-card p{
+    text-align: justify;
+}
+
+.card button{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 7px 2px;
+    border: 2px solid white;
+    background: none;
+    cursor: pointer;
+    box-shadow: 0 2px 0 0 #e32771;
+    display: inline-block;
+}
+.card button img{
+    margin-left: 0.8rem;
+}
+.card button:hover{
+    border: 2px solid #e32771;
+    box-shadow: none;
+}
+.contactarme{
+    width: 90%;
+    margin: 3rem auto;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactarme h2{
+    padding-top: 1rem;
+    padding-bottom: 1.7rem;
+}
+form{
+    width: 55%;
+    padding-top: 3rem;
+}
+.datos{
+    display: flex;
+    justify-content: space-between; 
+     
+}
+.dato{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    padding: 1rem 0;     
+}
+label{
+    padding-bottom: 1rem;
+}
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;   
+}
+.enviar{
+    display: flex;
+    justify-content: center;    
+}
+#submit{
+    background-color: #e32771;
+    color: white;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+input,textarea{
+    padding: 10px 5px;
+    border: 2px solid #e6508c;
+    font-family: inherit;
+    border-radius: 5px;
+}
+select{
+    padding: 10px 5px;
+    border: 2px solid #e6508c;
+    font-family: inherit;
+    border-radius: 5px;
+    width: 212%;
+}
+.terminos{
+    display: flex;
+    padding: 1rem 0;
+    align-content: flex-start;        
+    width: 100%;
+}
+.terminos p{
+    padding-left: 8px;
+    font-size: 0.8rem;
+}
+footer{
+    background-color: #f4fcff;
+}
+.contenedor-footer{
+    width: 90%;
+    margin: 0 auto;
+}
+.final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+
+}
+.redes{
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+    font-size: 1.3rem;
+}
+hr{
+    color: gray;
+}
+.politicas{
+    padding: 1.5rem 0 3.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .tx-hero button{
+    width: 30%;
+  }
+  header button{
+    padding: 7px 10px;
+  }
+  .foto{
+    margin-left: 5rem;
+  }
+
+}
+@media screen and (max-width:768px)
+{
+    .logo span{
+        display: inline;
+        color: black;
+        font-size: 2rem;
+    }
+    nav{
+        display: none;
+    }
+    .foto{
+        display: none;
+      }
+    .tx-hero button{
+        width: 30%;
+    }
+    .sobre-mi img{
+        display: none;
+    }
+    .cards{
+        flex-direction: column;
+        width: 90%;
+    }
+    .datos{
+        flex-direction: column;
+        flex: 1 1 100%;
+    }
+    /* form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } */
+    input{
+        width: 200%;
+    }
+    /* .terminos{
+        display: flex;
+        align-content: flex-start;        
+        width: 100%;
+    } */
+    .terminos p{
+        width: 100%;
+    }
+    #accept{
+        width: 10%;
+    }
+    .enviar{
+        width: 30%;
+        align-content: center;
+    }
+    .politicas{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .politicas a{
+        line-height: 2rem;
+    }
+}
